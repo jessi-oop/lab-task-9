@@ -1,0 +1,150 @@
+body {
+  background-color: #0b0f1a;
+}
+
+.card {
+  background-color: #121826;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px 0 #a855f7;
+}
+
+.card-title {
+  color: #f9fafb;
+}
+
+.card-text {
+  color: #f9fafb;
+}
+
+.badge {
+  background-color: #7c3aed;
+}
+
+#restart-btn {
+  background-color: #7c3aed;
+  color: #f9fafb;
+  border: none;
+  cursor: pointer;
+}
+
+#restart-btn:hover {
+  background-color: #4e0fb3;
+}
+
+#back-btn {
+  background-color: #1f2937;
+  color: #f9fafb;
+  border: none;
+  cursor: pointer;
+}
+
+#back-btn:hover {
+  background-color: #374151;
+}
+
+#display-coin-count {
+  color: white;
+}
+
+#modal-content {
+  background-color: #121826;
+  border: solid #7c3aed;
+}
+
+#modal-footer {
+  background: #7c3aed;
+  color: white;
+}
+
+/* shared door design */
+#door-1,
+#door-2,
+#door-3 {
+  color: #f9fafb;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  height: 300px;
+  width: 75%;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* glow animation */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* shine effect */
+#door-1::before,
+#door-2::before,
+#door-3::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  transform: rotate(25deg);
+  transition: 0.5s;
+}
+
+/* hover shine movement */
+#door-1:hover::before,
+#door-2:hover::before,
+#door-3:hover::before {
+  top: 50%;
+  left: 50%;
+}
+
+/* DOOR 1 - Blood Curse */
+#door-1 {
+  background: linear-gradient(180deg, #7f1d1d, #450a0a);
+  border-color: #f87171;
+  animation: pulseGlow 2s infinite;
+}
+
+#door-1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(248, 113, 113, 0.9);
+}
+
+/* DOOR 2 - Poison Curse */
+#door-2 {
+  background: linear-gradient(180deg, #14532d, #052e16);
+  border-color: #4ade80;
+  animation: pulseGlow 2s infinite;
+}
+
+#door-2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(74, 222, 128, 0.9);
+}
+
+/* DOOR 3 - Void Curse */
+#door-3 {
+  background: linear-gradient(180deg, #1e1b4b, #0b0f1a);
+  border-color: #a855f7;
+  animation: pulseGlow 2s infinite;
+}
+
+#door-3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(168, 85, 247, 1);
+}

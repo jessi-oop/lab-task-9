@@ -1,0 +1,71 @@
+body {
+  background-color: #0b0f1a;
+}
+
+.card {
+  background-color: #121826;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px 0 #a855f7;
+}
+
+.card-title {
+  color: #f9fafb;
+}
+
+.card-text {
+  color: #f9fafb;
+}
+
+.badge {
+  background-color: #7c3aed;
+}
+
+#next-btn {
+  background-color: #7c3aed;
+  color: #f9fafb;
+  border: none;
+  cursor: pointer;
+}
+
+#next-btn:hover {
+  background-color: #4e0fb3;
+}
+
+#back-btn {
+  background-color: #1f2937;
+  color: #f9fafb;
+  border: none;
+  cursor: pointer;
+}
+
+#back-btn:hover {
+  background-color: #374151;
+}
+
+#decrease-coins-btn {
+  background-color: #bea527;
+  color: #f9fafb;
+  border: none;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#decrease-coins-btn:hover {
+  background-color: #b78914;
+}
+
+#increase-coins-btn {
+  background-color: #bea527;
+  color: #f9fafb;
+  border: none;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#increase-coins-btn:hover {
+  background-color: #b78914;
+}
+
+#display-coin-count {
+  color: white;
+}
