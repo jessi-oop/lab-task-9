@@ -11,8 +11,7 @@ submitButton.addEventListener("click", function () {
     return;
   }
 
-  validationMessage.textContent =
-    "Character has been recorded in the annals of history.";
+  validationMessage.textContent = `Character ${namevalue} has been recorded in the annals of history.`;
 
   validationMessage.style.color = "#008000 ";
 });

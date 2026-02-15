@@ -27,7 +27,7 @@
           <div class="card-body">
             <h3 class="card-title d-flex justify-content-center">Door of Demise</h3>
             <p class="card-text d-flex justify-content-center" id="level-text">
-              One leads to salvation. Others leads to doom.
+              Time to test your luck. One leads to salvation. Others leads to doom.
             </p>
           </div>
 
@@ -56,27 +56,33 @@
 
       <!-- Result Modal -->
         <div class="modal fade" id="modal-result" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-white" id="modal-content" >
-            
-            <div class="modal-header">
-                <h5 class="modal-title" id="modal-title">Result</h5>
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden text-white" id="modal-content">
+
+              <div class="modal-header border-0 px-4 pt-4 pb-2">
+                <h5 class="modal-title fw-bold" id="modal-title"></h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
+              </div>
 
-            <div class="modal-body" id="modal-message">
-                Message goes here...
-            </div>
+              <div class="modal-body px-4 pb-4 pt-2">
+                <p class="mb-0 fs-6 lh-lg" id="modal-message"></p>
+              </div>
 
-            <div class="modal-footer">
-                <button type="button" class="btn" id="modal-footer" data-bs-dismiss="modal">
-                Continue
+              <div class="modal-footer border-0 px-4 pb-4 pt-0">
+                <button
+                  type="button"
+                  class="btn px-4 py-2 fw-semibold rounded-3"
+                  id="modal-footer"
+                  data-bs-dismiss="modal"
+                >
+                  Continue
                 </button>
-            </div>
+              </div>
 
             </div>
+          </div>
         </div>
-        </div>
+
 
     </div>
   </body>
